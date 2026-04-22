@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prototipo de Educación en Ciberseguridad</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <h1>Educación en Ciberseguridad</h1>
+
+      <!-- Buscador -->
+      <input type="text" id="search" placeholder="Buscar información..." />
+    </header>
+
+    <!-- ================= NAVEGACIÓN ================= -->
+    <nav>
+      <button onclick="showSection('phishing')">Phishing</button>
+      <button onclick="showSection('whatsapp')">Estafas WhatsApp</button>
+      <button onclick="showSection('passwords')">Contraseñas</button>
+    </nav>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main>
+      <!-- Sección: Phishing -->
+      <section id="phishing" class="content">
+        <h2>Phishing</h2>
+
+        <p>
+          El phishing es una técnica utilizada para engañar a las personas y
+          robar información personal mediante correos electrónicos o sitios web
+          falsos que imitan entidades legítimas.
+        </p>
+
+        <h3>¿Cómo identificarlo?</h3>
+        <ul>
+          <li>Correos con urgencia o amenazas</li>
+          <li>Enlaces sospechosos</li>
+          <li>Errores de ortografía</li>
+        </ul>
+
+        <h3>Recomendaciones</h3>
+        <ul>
+          <li>No ingresar datos en enlaces desconocidos</li>
+          <li>Verificar siempre la URL</li>
+          <li>Usar autenticación en dos factores</li>
+        </ul>
+      </section>
+      <!-- Sección: WhatsApp -->
+      <section id="whatsapp" class="content">
+        <h2>Estafas en WhatsApp</h2>
+
+        <p>
+          Los ciberdelincuentes utilizan WhatsApp para engañar a las personas
+          mediante mensajes falsos.
+        </p>
+
+        <h3>Tipos comunes</h3>
+        <ul>
+          <li>Suplantación de identidad</li>
+          <li>Enlaces maliciosos</li>
+          <li>Solicitud de códigos de verificación</li>
+        </ul>
+
+        <h3>Cómo prevenir</h3>
+        <ul>
+          <li>No compartir códigos</li>
+          <li>No abrir enlaces sospechosos</li>
+          <li>Activar verificación en dos pasos</li>
+        </ul>
+      </section>
+      <!-- Sección: Contraseñas -->
+      <section id="passwords" class="content">
+        <h2>Contraseñas Seguras</h2>
+
+        <p>
+          Una contraseña segura protege tu información personal frente a accesos
+          no autorizados.
+        </p>
+
+        <h3>Características de una buena contraseña</h3>
+        <ul>
+          <li>Mínimo 8 caracteres</li>
+          <li>Uso de símbolos y números</li>
+          <li>No usar datos personales</li>
+        </ul>
+
+        <h3>Buenas prácticas</h3>
+        <ul>
+          <li>No reutilizar contraseñas</li>
+          <li>Cambiar periódicamente</li>
+          <li>Usar gestores de contraseñas</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <p>Prototipo Individual - Jhoan Guillermo Hernández</p>
+      <p>Proyecto de Ingeniería I - UNAD</p>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
