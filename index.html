@@ -1,110 +1,395 @@
-<!doctype html>
+  <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Prototipo de Educación en Ciberseguridad</title>
+<head>
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- ================= HEADER ================= -->
+    <!-- ========================================= -->
+    <!-- METADATOS BÁSICOS -->
+    <!-- ========================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Sitio web educativo sobre ciberseguridad, prevención de ataques digitales y buenas prácticas de seguridad."
+    >
+
+    <meta
+        name="keywords"
+        content="ciberseguridad, phishing, seguridad digital, contraseñas, WhatsApp, educación"
+    >
+
+    <meta
+        name="author"
+        content="Proyecto de Ingenieria I - UNAD"
+    >
+
+    <title>
+        Educación en Ciberseguridad
+    </title>
+
+
+    <!-- ========================================= -->
+    <!-- HOJA DE ESTILOS -->
+    <!-- ========================================= -->
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+    <!-- ========================================= -->
+    <!-- HEADER -->
+    <!-- ========================================= -->
+
     <header>
-      <h1>Educación en Ciberseguridad</h1>
 
-      <!-- Buscador -->
-      <input type="text" id="search" placeholder="Buscar información..." />
+        <h1>
+            Educación en Ciberseguridad
+        </h1>
+
+        <p class="subtitle">
+
+            Aprende a identificar amenazas digitales, conocer casos reales
+            y fortalecer la protección de tu información personal.
+
+        </p>
+
     </header>
 
-    <!-- ================= NAVEGACIÓN ================= -->
-    <nav>
-      <button onclick="showSection('phishing')">Phishing</button>
-      <button onclick="showSection('whatsapp')">Estafas WhatsApp</button>
-      <button onclick="showSection('passwords')">Contraseñas</button>
-    </nav>
 
-    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+
+    <!-- ========================================= -->
+    <!-- MENÚ -->
+    <!-- ========================================= -->
+
+<nav>
+
+<button onclick="showHome()">
+ Inicio
+</button>
+
+<button onclick="showSection('phishing')">
+ Phishing
+</button>
+
+<button onclick="showSection('whatsapp')">
+ WhatsApp
+</button>
+
+<button onclick="showSection('passwords')">
+ Contraseñas
+</button>
+
+</nav>
+
+
+
+    <!-- ========================================= -->
+    <!-- DOCUMENTO DESTACADO -->
+    <!-- ========================================= -->
+
+<section
+id="home"
+class="featured-document"
+>
+
+    <h2>
+
+        ¿Te ha ocurrido alguna de estas situaciones?
+
+    </h2>
+    <img
+src=https://media.istockphoto.com/id/2242634588/es/foto/acabo-de-leer-las-malas-noticias.jpg?b=1&s=612x612&w=0&k=20&c=_g27YcjugfW0PKhDuUoODLpNZ5woqjOCh742zEqZWvE=
+alt="Persona preocupada por seguridad digital"
+width="100%"
+>
+
+    <ul>
+
+        <li>
+            Recibiste un mensaje diciendo:
+            <strong>"Tu cuenta será suspendida, ingresa aquí urgentemente"</strong>.
+        </li>
+
+        <li>
+            Un supuesto familiar te escribió desde otro número
+            pidiendo dinero o ayuda inmediata.
+        </li>
+
+        <li>
+            Te llegó un enlace prometiendo premios, bonos o regalos.
+        </li>
+
+        <li>
+            Ingresaste una contraseña fácil porque era más rápida de recordar.
+        </li>
+
+        <li>
+            Recibiste un código de verificación y alguien te pidió compartirlo.
+        </li>
+
+    </ul>
+
+
+    <p>
+
+        Si respondiste sí a alguna de estas situaciones,
+        debes saber que millones de personas enfrentan este tipo
+        de amenazas diariamente.
+
+    </p>
+
+
+    <p>
+
+        Los ciberdelincuentes utilizan estrategias como phishing,
+        ingeniería social, hackeos mediante aplicaciones de mensajería
+        y robo de credenciales para obtener información personal.
+
+    </p>
+
+
+    <blockquote>
+
+        Un simple clic puede ser suficiente para comprometer
+        una cuenta, una contraseña o información privada.
+
+    </blockquote>
+
+
+    <h3>
+
+        En esta plataforma encontrarás:
+
+    </h3>
+
+    <ul>
+
+        <li>Videos educativos.</li>
+
+        <li>Casos reales.</li>
+
+        <li>Artículos informativos.</li>
+
+        <li>Consejos de prevención.</li>
+
+        <li>Buenas prácticas de seguridad digital.</li>
+
+    </ul>
+
+
+    <p>
+
+        Explora las diferentes secciones y aprende a proteger
+        tu información antes de convertirte en una víctima.
+
+    </p>
+
+</section>
+
+
+
+    <!-- ========================================= -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <!-- ========================================= -->
+
     <main>
-      <!-- Sección: Phishing -->
-      <section id="phishing" class="content">
-        <h2>Phishing</h2>
 
-        <p>
-          El phishing es una técnica utilizada para engañar a las personas y
-          robar información personal mediante correos electrónicos o sitios web
-          falsos que imitan entidades legítimas.
-        </p>
+<!-- ================= PHISHING ================= -->
 
-        <h3>¿Cómo identificarlo?</h3>
-        <ul>
-          <li>Correos con urgencia o amenazas</li>
-          <li>Enlaces sospechosos</li>
-          <li>Errores de ortografía</li>
-        </ul>
+<section id="phishing" class="content">
 
-        <h3>Recomendaciones</h3>
-        <ul>
-          <li>No ingresar datos en enlaces desconocidos</li>
-          <li>Verificar siempre la URL</li>
-          <li>Usar autenticación en dos factores</li>
-        </ul>
-      </section>
-      <!-- Sección: WhatsApp -->
-      <section id="whatsapp" class="content">
-        <h2>Estafas en WhatsApp</h2>
+<h2>Phishing</h2>
 
-        <p>
-          Los ciberdelincuentes utilizan WhatsApp para engañar a las personas
-          mediante mensajes falsos.
-        </p>
+<p>
+El phishing es una de las amenazas digitales más comunes actualmente.
+Los ciberdelincuentes utilizan mensajes, páginas web y correos falsos
+para engañar a las personas y obtener información personal.
+</p>
 
-        <h3>Tipos comunes</h3>
-        <ul>
-          <li>Suplantación de identidad</li>
-          <li>Enlaces maliciosos</li>
-          <li>Solicitud de códigos de verificación</li>
-        </ul>
+<h3>Video introductorio</h3>
 
-        <h3>Cómo prevenir</h3>
-        <ul>
-          <li>No compartir códigos</li>
-          <li>No abrir enlaces sospechosos</li>
-          <li>Activar verificación en dos pasos</li>
-        </ul>
-      </section>
-      <!-- Sección: Contraseñas -->
-      <section id="passwords" class="content">
-        <h2>Contraseñas Seguras</h2>
+<iframe
+width="100%"
+height="350"
+src="https://www.youtube.com/embed/mE7w2k_MkiU"
+allowfullscreen>
+</iframe>
 
-        <p>
-          Una contraseña segura protege tu información personal frente a accesos
-          no autorizados.
-        </p>
+<h3>¿Qué es el phishing?</h3>
 
-        <h3>Características de una buena contraseña</h3>
-        <ul>
-          <li>Mínimo 8 caracteres</li>
-          <li>Uso de símbolos y números</li>
-          <li>No usar datos personales</li>
-        </ul>
+<p>
+El phishing consiste en técnicas de engaño donde los atacantes
+simulan ser bancos, redes sociales o empresas reconocidas.
+</p>
 
-        <h3>Buenas prácticas</h3>
-        <ul>
-          <li>No reutilizar contraseñas</li>
-          <li>Cambiar periódicamente</li>
-          <li>Usar gestores de contraseñas</li>
-        </ul>
-      </section>
-    </main>
+<h3>¿Cómo identificarlo?</h3>
 
-    <!-- ================= FOOTER ================= -->
+<ul>
+
+<li>Mensajes con urgencia extrema.</li>
+
+<li>Errores ortográficos.</li>
+
+<li>Enlaces desconocidos.</li>
+
+<li>Solicitan información privada.</li>
+
+</ul>
+
+<h3>Video explicativo</h3>
+
+<iframe
+width="100%"
+height="350"
+src="https://www.youtube.com/embed/GdmH_DaXQT8"
+allowfullscreen>
+</iframe>
+
+<blockquote>
+Antes de hacer clic: detente, analiza y verifica.
+</blockquote>
+
+</section>
+
+
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<section id="whatsapp" class="content">
+
+<h2> Estafas en WhatsApp</h2>
+
+<p>
+WhatsApp es uno de los principales medios utilizados
+por ciberdelincuentes para engaños y fraudes.
+</p>
+
+<h3>Video introductorio</h3>
+
+<iframe                                                      
+width="100%"
+height="350"
+src="https://www.youtube.com/embed/cu0JzQcYEG8"
+allowfullscreen>
+</iframe>
+
+<h3>¿Cómo funcionan estas estafas?</h3>
+
+<ul>
+
+<li>Premios falsos.</li>
+
+<li>Mensajes de familiares.</li>
+
+<li>Códigos de verificación.</li>
+
+<li>Suplantación.</li>
+
+</ul>
+
+<a
+href="https://www.infobae.com/tecno/2026/03/04/como-evitar-ser-victima-de-hackeos-en-whatsapp-y-correo-electronico/"
+target="_blank">
+
+Leer artículo
+
+</a>
+
+<blockquote>
+
+Verifica antes de actuar.
+
+</blockquote>
+
+</section>
+
+
+
+
+<!-- ================= CONTRASEÑAS ================= -->
+
+<section id="passwords" class="content">
+
+<h2> Contraseñas Seguras</h2>
+
+<p>
+
+Una contraseña segura protege
+tu información personal.
+
+</p>
+
+<h3>Video educativo</h3>
+
+<iframe
+width="100%"
+height="350"
+src="https://www.youtube.com/embed/hokxOr4_X9M"
+allowfullscreen>
+</iframe>
+
+<ul>
+
+<li>No usar fechas.</li>
+
+<li>No repetir contraseñas.</li>
+
+<li>Agregar símbolos.</li>
+
+<li>Usar doble autenticación.</li>
+
+</ul>
+
+<iframe
+width="100%"
+height="350"
+src="https://www.youtube.com/embed/BED_YyiGibM"
+allowfullscreen>
+</iframe>
+
+<blockquote>
+
+Una contraseña segura protege
+más de una cuenta.
+
+</blockquote>
+
+</section>
+
+</main>
+
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
+
     <footer>
-      <p>Prototipo Individual - Jhoan Guillermo Hernández</p>
-      <p>Proyecto de Ingeniería I - UNAD</p>
+        <p>
+
+            Proyecto de Ingeniería I - UNAD
+
+        </p>
+
     </footer>
 
-    <!-- Script JS -->
+
+
+    <!-- ========================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================= -->
+
     <script src="script.js"></script>
-  </body>
+
+</body>
+
 </html>
